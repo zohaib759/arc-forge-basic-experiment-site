@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perfect Circle — ARC/FORGE LAB</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="circle.css">
+</head>
+
+<body>
+
+    <header class="circle-nav">
+
+        <a href="../index.html" class="back">
+            ← ARC/FORGE
+        </a>
+
+        <div class="experiment-title">
+            PERFECT CIRCLE
+        </div>
+
+        <button id="reset">
+            RESET
+        </button>
+
+    </header>
+
+
+    <main class="circle-page">
+
+        <section class="circle-intro">
+
+            <p class="eyebrow">
+                EXPERIMENT 01
+            </p>
+
+            <h1>Draw a perfect circle.</h1>
+
+            <p>
+                Use your mouse or finger.
+                Try to get as close to 100% as possible.
+            </p>
+
+        </section>
+
+
+        <section class="drawing-area">
+
+            <canvas id="canvas"></canvas>
+
+            <div id="instruction">
+                Start drawing
+            </div>
+
+        </section>
+
+
+        <section class="result" id="result">
+
+            <div class="score-label">
+                YOUR SCORE
+            </div>
+
+            <div class="score">
+                <span id="score">0</span>
+                <small>%</small>
+            </div>
+
+            <p id="message">
+                Draw a circle to find out.
+            </p>
+
+            <button id="tryAgain">
+                TRY AGAIN
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="circle.js"></script>
+
+</body>
+
+</html>

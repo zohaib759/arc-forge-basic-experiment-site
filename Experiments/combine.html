@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Infinite Combine — ARC/FORGE LAB</title>
+
+    <link rel="stylesheet" href="combine.css">
+</head>
+
+<body>
+
+    <header class="combine-nav">
+
+        <a href="../index.html">
+            ← ARC/FORGE
+        </a>
+
+        <span>
+            EXPERIMENT 05
+        </span>
+
+        <button id="resetButton">
+            RESET
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <section class="combine-header">
+
+            <p class="eyebrow">
+                INFINITE COMBINE
+            </p>
+
+            <h1>
+                What happens<br>
+                when things collide?
+            </h1>
+
+            <p>
+                Choose two things and combine them.
+                Discover everything you can.
+            </p>
+
+        </section>
+
+
+        <section class="combiner">
+
+            <div
+                class="slot"
+                id="slotOne"
+            >
+                <span>+</span>
+            </div>
+
+
+            <div class="combine-symbol">
+                +
+            </div>
+
+
+            <div
+                class="slot"
+                id="slotTwo"
+            >
+                <span>+</span>
+            </div>
+
+
+            <button
+                id="combineButton"
+                disabled
+            >
+                COMBINE
+            </button>
+
+        </section>
+
+
+        <section class="elements">
+
+            <h2>
+                YOUR DISCOVERIES
+                <span id="discoveryCount">
+                    0
+                </span>
+            </h2>
+
+            <div
+                id="elementList"
+                class="element-list"
+            ></div>
+
+        </section>
+
+
+        <section
+            id="discovery"
+            class="discovery"
+        >
+
+            <div class="discovery-inner">
+
+                <span>
+                    NEW DISCOVERY
+                </span>
+
+                <div id="discoveryEmoji">
+                    ✨
+                </div>
+
+                <h2 id="discoveryName">
+                    Something new
+                </h2>
+
+                <p id="discoveryText"></p>
+
+                <button id="closeDiscovery">
+                    CONTINUE
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="combine.js"></script>
+
+</body>
+
+</html>

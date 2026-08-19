@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Spend It — ARC/FORGE LAB</title>
+
+    <link rel="stylesheet" href="spend.css">
+</head>
+
+<body>
+
+    <header class="spend-nav">
+
+        <a href="../index.html">
+            ← ARC/FORGE
+        </a>
+
+        <span>EXPERIMENT 04</span>
+
+        <button id="resetButton">
+            RESET
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <section class="money-header">
+
+            <p class="eyebrow">
+                SPEND IT
+            </p>
+
+            <h1>
+                You have
+                <span id="balance">$1,000,000</span>
+            </h1>
+
+            <p>
+                You have one million fictional dollars.
+                Spend as much as you want.
+            </p>
+
+        </section>
+
+
+        <section
+            class="products"
+            id="products"
+        ></section>
+
+
+        <section class="summary">
+
+            <div>
+                <span>SPENT</span>
+                <strong id="spent">$0</strong>
+            </div>
+
+            <div>
+                <span>REMAINING</span>
+                <strong id="remaining">
+                    $1,000,000
+                </strong>
+            </div>
+
+        </section>
+
+
+        <section
+            class="final"
+            id="final"
+        >
+
+            <h2>
+                You spent it.
+            </h2>
+
+            <p id="finalMessage"></p>
+
+            <button id="startAgain">
+                START AGAIN
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="spend.js"></script>
+
+</body>
+
+</html>

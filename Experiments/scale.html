@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Human Scale — ARC/FORGE LAB</title>
+
+    <link
+        rel="stylesheet"
+        href="scale.css"
+    >
+
+</head>
+
+<body>
+
+    <header class="scale-nav">
+
+        <a href="../index.html">
+            ← ARC/FORGE
+        </a>
+
+        <span>
+            EXPERIMENT 03
+        </span>
+
+        <button id="resetScale">
+            RESET
+        </button>
+
+    </header>
+
+
+    <main class="scale-page">
+
+        <div class="scale-header">
+
+            <p class="eyebrow">
+                HUMAN SCALE
+            </p>
+
+            <h1>
+                How big<br>
+                is big?
+            </h1>
+
+            <p class="description">
+                Scroll to travel through the scale of the universe.
+            </p>
+
+        </div>
+
+
+        <div class="scale-visual">
+
+            <div
+                class="scale-line"
+                id="scaleLine"
+            ></div>
+
+
+            <div
+                class="object"
+                id="object"
+            ></div>
+
+
+            <div class="object-info">
+
+                <div
+                    class="object-index"
+                    id="objectIndex"
+                >
+                    01 / 12
+                </div>
+
+                <h2 id="objectName">
+                    Atom
+                </h2>
+
+                <p id="objectDescription">
+                    One of the smallest structures
+                    that makes up ordinary matter.
+                </p>
+
+                <div
+                    class="object-size"
+                    id="objectSize"
+                >
+                    0.0000000001 m
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="scale-progress">
+
+            <div
+                class="progress-bar"
+                id="progressBar"
+            ></div>
+
+        </div>
+
+    </main>
+
+
+    <script src="scale.js"></script>
+
+</body>
+
+</html>

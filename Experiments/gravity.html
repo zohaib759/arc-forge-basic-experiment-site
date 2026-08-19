@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gravity Lab — ARC/FORGE LAB</title>
+
+    <link rel="stylesheet" href="gravity.css">
+</head>
+
+<body>
+
+    <header class="gravity-nav">
+
+        <a href="../index.html">← ARC/FORGE</a>
+
+        <span>EXPERIMENT 02</span>
+
+        <button id="clearButton">RESET</button>
+
+    </header>
+
+
+    <main>
+
+        <section class="gravity-intro">
+
+            <p>GRAVITY LAB</p>
+
+            <h1>Make your<br>own universe.</h1>
+
+            <div class="instructions">
+                Move your mouse around the screen.<br>
+                Click to create a new gravity source.
+            </div>
+
+        </section>
+
+
+        <canvas id="gravityCanvas"></canvas>
+
+
+        <div class="stats">
+
+            <span>
+                PARTICLES:
+                <strong id="particleCount">0</strong>
+            </span>
+
+            <span>
+                GRAVITY SOURCES:
+                <strong id="sourceCount">0</strong>
+            </span>
+
+        </div>
+
+    </main>
+
+
+    <script src="gravity.js"></script>
+
+</body>
+
+</html>

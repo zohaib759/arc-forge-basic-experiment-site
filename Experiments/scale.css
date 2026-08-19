@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #f4f4ef;
+
+    color: #111;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   NAV
+========================= */
+
+.scale-nav {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 65px;
+
+    padding: 0 30px;
+
+    border-bottom: 1px solid #111;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    z-index: 10;
+}
+
+.scale-nav a {
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.scale-nav span {
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+.scale-nav button {
+
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.scale-page {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.scale-header {
+
+    position: absolute;
+
+    left: 7vw;
+
+    top: 17vh;
+
+    z-index: 4;
+
+    pointer-events: none;
+}
+
+.eyebrow {
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+}
+
+.scale-header h1 {
+
+    font-size:
+        clamp(60px, 9vw, 125px);
+
+    line-height: .85;
+
+    letter-spacing: -7px;
+}
+
+.description {
+
+    margin-top: 35px;
+
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   VISUAL
+========================= */
+
+.scale-visual {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    width: 75vw;
+
+    height: 75vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* =========================
+   SCALE LINE
+========================= */
+
+.scale-line {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 0;
+
+    width: 1px;
+
+    height: 100%;
+
+    background: #ccc;
+
+    transform:
+        translateX(-50%);
+}
+
+
+/* =========================
+   OBJECT
+========================= */
+
+.object {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    width: 30px;
+
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: #111;
+
+    transition:
+        width .45s ease,
+        height .45s ease;
+}
+
+
+/* =========================
+   INFO
+========================= */
+
+.object-info {
+
+    position: absolute;
+
+    left: calc(50% + 50px);
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    max-width: 350px;
+}
+
+.object-index {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #888;
+
+    margin-bottom: 15px;
+}
+
+.object-info h2 {
+
+    font-size:
+        clamp(40px, 5vw, 70px);
+
+    letter-spacing: -4px;
+
+    margin-bottom: 15px;
+}
+
+.object-info p {
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #555;
+
+    margin-bottom: 20px;
+}
+
+.object-size {
+
+    font-family:
+        monospace;
+
+    font-size: 13px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #bbb;
+}
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+.scale-progress {
+
+    position: fixed;
+
+    bottom: 30px;
+
+    left: 7vw;
+
+    width: 300px;
+
+    height: 3px;
+
+    background: #ddd;
+
+    z-index: 5;
+}
+
+.progress-bar {
+
+    width: 0%;
+
+    height: 100%;
+
+    background: #111;
+
+    transition:
+        width .3s ease;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .scale-nav {
+
+        padding: 0 15px;
+    }
+
+    .scale-nav span {
+
+        display: none;
+    }
+
+    .scale-header {
+
+        left: 25px;
+
+        top: 13vh;
+    }
+
+    .scale-header h1 {
+
+        letter-spacing: -4px;
+    }
+
+    .scale-visual {
+
+        width: 90vw;
+
+        height: 70vh;
+
+        top: 58%;
+    }
+
+    .object-info {
+
+        left: 50%;
+
+        top: 65%;
+
+        width: 80vw;
+
+        transform:
+            translateX(-50%);
+
+        text-align: center;
+    }
+
+    .object-info h2 {
+
+        letter-spacing: -2px;
+    }
+
+    .scale-line {
+
+        height: 35%;
+    }
+
+    .scale-progress {
+
+        left: 25px;
+
+        width: 200px;
+    }
+
+}

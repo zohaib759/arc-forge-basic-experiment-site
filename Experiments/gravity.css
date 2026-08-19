@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050505;
+    color: #fff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   NAV
+========================= */
+
+.gravity-nav {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 65px;
+
+    padding: 0 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #333;
+
+    z-index: 10;
+}
+
+.gravity-nav a {
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.gravity-nav span {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+.gravity-nav button {
+    background: none;
+
+    color: #fff;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CANVAS
+========================= */
+
+#gravityCanvas {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.gravity-intro {
+    position: fixed;
+
+    left: 7vw;
+    top: 18vh;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.gravity-intro p {
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+}
+
+.gravity-intro h1 {
+    font-size: clamp(55px, 8vw, 110px);
+
+    line-height: .85;
+
+    letter-spacing: -6px;
+}
+
+.instructions {
+    margin-top: 35px;
+
+    color: #999;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+    position: fixed;
+
+    bottom: 25px;
+    left: 30px;
+
+    z-index: 3;
+
+    display: flex;
+
+    gap: 30px;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    color: #777;
+}
+
+.stats strong {
+    color: #fff;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .gravity-nav {
+        padding: 0 15px;
+    }
+
+    .gravity-nav span {
+        display: none;
+    }
+
+    .gravity-intro {
+        left: 25px;
+        top: 18vh;
+    }
+
+    .gravity-intro h1 {
+        letter-spacing: -3px;
+    }
+
+    .instructions {
+        font-size: 13px;
+    }
+
+    .stats {
+        left: 20px;
+        bottom: 20px;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+}
